@@ -1,4 +1,5 @@
 import java.io.IOException
+import java.util.PriorityQueue
 
 object Day1 {
 
@@ -9,15 +10,26 @@ object Day1 {
       ?: throw IOException()
   }
 
-  fun part1(input: String): Int = input.lineSequence()
-    .fold(initial = 0 to 0) { (max, prevElfAccum), line ->
-      val foodItem = line.toIntOrNull()
-      val elfAccum = if (foodItem != null) {
-        prevElfAccum + foodItem
-      } else {
-        0
+  fun part1(input: String): Int = elvesFood(input).maxOf { it }
+
+  fun part2(input: String): Int = elvesFood(input)
+    .sortedDescending().take(3).sum()
+
+  private fun elvesFood(input: String): List<Int> =
+    input.lines()
+      .fold(mutableListOf(0)) { listOfElves, line ->
+        if (line.isNotBlank()) {
+          listOfElves.alterLast { it + line.toInt() }
+        } else {
+          listOfElves.add(0)
+        }
+        listOfElves
       }
-      val newMax = if (elfAccum > max) elfAccum else max
-      newMax to elfAccum
-    }.first
+
+  private fun <E> MutableList<E>.alterLast(fn: (E) -> E): Unit {
+    if (isEmpty()) return
+    val indexOfLast = size - 1
+    val newLast = fn(last())
+    this[indexOfLast] = newLast
+  }
 }
