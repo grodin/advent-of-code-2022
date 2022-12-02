@@ -1,11 +1,10 @@
 package com.omricat.adventofcode.y2022
 
-import Day1
-import kotlin.test.Test
-import kotlin.test.assertEquals
+import com.omricat.adventofcode.y2022.util.AbstractDayTest
 
-internal class Day1Test {
-  val input = """
+internal class Day1Test : AbstractDayTest<Day1>(
+  Day1,
+  input = """
     1000
     2000
     3000
@@ -21,15 +20,7 @@ internal class Day1Test {
 
     10000
 
-  """.trimIndent()
-
-  @Test
-  fun testPart1() {
-    assertEquals(Day1.part1(input), 24_000)
-  }
-
-  @Test
-  internal fun testPart2() {
-    assertEquals(Day1.part2(input), 45_000)
-  }
-}
+  """.trimIndent(),
+  part1Expected = 24_000,
+  part2Expected = 45_000
+)

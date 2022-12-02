@@ -1,18 +1,12 @@
-import java.io.IOException
-import java.util.PriorityQueue
+package com.omricat.adventofcode.y2022
 
-object Day1 {
+import com.omricat.adventofcode.y2022.util.Day
 
-  val input by lazy {
-    this::class.java
-      .getResource("day1_input.txt")
-      ?.readText()
-      ?: throw IOException()
-  }
+object Day1 : Day(1) {
 
-  fun part1(input: String): Int = elvesFood(input).maxOf { it }
+  override fun part1(input: String): Int = elvesFood(input).maxOf { it }
 
-  fun part2(input: String): Int = elvesFood(input)
+  override fun part2(input: String): Int = elvesFood(input)
     .sortedDescending().take(3).sum()
 
   private fun elvesFood(input: String): List<Int> =

@@ -13,7 +13,7 @@ repositories {
 }
 
 application {
-  mainClass.set("com.omricat.adventofcode.y2022.Runner")
+  mainClass.set("com.omricat.adventofcode.y2022.util.Runner")
 }
 
 dependencies {
