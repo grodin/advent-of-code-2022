@@ -12,13 +12,13 @@ abstract class AbstractDayTest<D: Day>(
 
   @Test
   fun testPart1() {
-    assertEquals(dayInstance.part1(input), part1Expected)
+    assertEquals(part1Expected, dayInstance.part1(input))
   }
 
 
   @Test
-  internal fun testPart2() {
-    assertEquals(dayInstance.part2(input), part2Expected)
+  fun testPart2() {
+    assertEquals(part2Expected, dayInstance.part2(input))
   }
 
 }

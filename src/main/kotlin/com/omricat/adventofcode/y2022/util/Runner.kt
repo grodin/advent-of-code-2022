@@ -2,14 +2,11 @@
 
 package com.omricat.adventofcode.y2022.util
 
-import com.omricat.adventofcode.y2022.Day1
+import com.omricat.adventofcode.y2022.Day2
 
 
 fun main() {
-
-  println("Part 1: ${Day1.part1(Day1.input)}")
-  println("Part 2: ${Day1.part2(Day1.input)}")
-
+  printPart1(Day2)
 }
 
 fun printPart1(day: Day) {
