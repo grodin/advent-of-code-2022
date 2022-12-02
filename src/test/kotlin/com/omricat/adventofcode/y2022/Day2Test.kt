@@ -11,5 +11,5 @@ internal class Day2Test: AbstractDayTest<Day2>(
     
   """.trimIndent(),
   part1Expected = 15,
-  part2Expected = Any(),
+  part2Expected = 12,
 )

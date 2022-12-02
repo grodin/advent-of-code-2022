@@ -7,6 +7,7 @@ import com.omricat.adventofcode.y2022.Day2
 
 fun main() {
   printPart1(Day2)
+  printPart2(Day2)
 }
 
 fun printPart1(day: Day) {
