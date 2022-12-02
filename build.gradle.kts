@@ -12,6 +12,10 @@ repositories {
   mavenCentral()
 }
 
+application {
+  mainClass.set("com.omricat.adventofcode.y2022.Runner")
+}
+
 dependencies {
   testImplementation(kotlin("test"))
 }
