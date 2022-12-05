@@ -6,8 +6,13 @@ import com.omricat.adventofcode.y2022.Day2
 
 
 fun main() {
-  printPart1(Day2)
-  printPart2(Day2)
+
+  val daysToRun = listOf(Day3)
+
+  daysToRun.forEach {
+    printPart1(it)
+    printPart2(it)
+  }
 }
 
 fun printPart1(day: Day) {
