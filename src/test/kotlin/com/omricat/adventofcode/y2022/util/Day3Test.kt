@@ -13,5 +13,5 @@ class Day3Test : AbstractDayTest<Day3>(
     CrZsJsPPZsGzwwsLwLmpwMDw
   """.trimIndent(),
   part1Expected= 157,
-  part2Expected = Any()
+  part2Expected = 70
 )
