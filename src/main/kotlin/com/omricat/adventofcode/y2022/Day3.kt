@@ -1,5 +1,7 @@
-package com.omricat.adventofcode.y2022.util
+package com.omricat.adventofcode.y2022
 
+import com.omricat.adventofcode.y2022.util.Day
+import com.omricat.adventofcode.y2022.util.nonBlankLines
 import kotlin.streams.asSequence
 
 object Day3 : Day(3) {

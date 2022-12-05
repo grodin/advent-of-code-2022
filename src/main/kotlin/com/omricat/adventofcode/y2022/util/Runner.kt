@@ -2,7 +2,7 @@
 
 package com.omricat.adventofcode.y2022.util
 
-import com.omricat.adventofcode.y2022.Day2
+import com.omricat.adventofcode.y2022.Day3
 
 
 fun main() {

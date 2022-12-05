@@ -1,6 +1,6 @@
-package com.omricat.adventofcode.y2022.util
+package com.omricat.adventofcode.y2022
 
-import org.junit.jupiter.api.Assertions.*
+import com.omricat.adventofcode.y2022.util.AbstractDayTest
 
 class Day3Test : AbstractDayTest<Day3>(
   Day3,
