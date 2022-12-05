@@ -1,7 +1,7 @@
 package com.omricat.adventofcode.y2022.util
 
-fun String.words(): List<String> =
-  this.split("""\s+""".toRegex())
+fun String.words(separator: String = """\s+"""): List<String> =
+  this.split(separator.toRegex())
 
 fun String.nonBlankLines(): List<String> =
   lines().filter { it.isNotBlank() }

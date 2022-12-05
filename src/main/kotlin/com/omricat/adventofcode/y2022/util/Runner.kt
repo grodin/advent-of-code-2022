@@ -2,12 +2,10 @@
 
 package com.omricat.adventofcode.y2022.util
 
-import com.omricat.adventofcode.y2022.Day3
-
+import com.omricat.adventofcode.y2022.Day4
 
 fun main() {
-
-  val daysToRun = listOf(Day3)
+  val daysToRun = listOf(Day4)
 
   daysToRun.forEach {
     printPart1(it)
@@ -18,6 +16,7 @@ fun main() {
 fun printPart1(day: Day) {
   println("Day ${day.dayNumber}, part 1: ${day.part1(day.input)}")
 }
+
 fun printPart2(day: Day) {
   println("Day ${day.dayNumber}, part 2: ${day.part2(day.input)}")
 }
